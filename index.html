@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppe</title>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/9c8e3e5cc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-info">
+                <div class="header-info-list">
+                    <p class="header-info-item seperate">Vào cửa hàng trên ứng dụng F8-Shop</p>
+                    <p class="header-info-item">Kết nối</p>
+                    <a class="header-info-item header-info-connect" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="header-info-item header-info-connect" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="header-info-list">
+                    <div class="notice-parent">
+                        <p class="header-info-item"><i class="far fa-bell"></i> Thông báo </p>
+                        <div class="header-info-notice">
+                            <h2>Thông báo mới nhận</h2>
+                            <div class="header-info-notice-item">
+                                <p>Lorem ipsum dolor sit amet consectetur eius!</p>
+                            </div>
+                            <div class="header-info-notice-item">
+                                <p>Lorem ipsum dolor sit amet consectetur eius!</p>
+                            </div>
+                            <div class="header-info-notice-item">
+                                <p>Lorem ipsum dolor sit amet consectetur eius!</p>
+                            </div>
+                            <h2 id="see-all">Xem tất cả thông báo</h2>
+                        </div>
+                    </div> 
+                    <p class="header-info-item pointer">? Trợ giúp</p>
+                    <div class="info-parent">
+                        <p class="header-info-item"><i class="far fa-user"></i> Bùi Anh Tài</p>
+                        <div class="header-info-private">
+                            <ul>
+                                <li class="private-item">Tài Khoản của tôi</li>
+                                <li class="private-item">Đơn mua</li>
+                                <li class="private-item">Địa chỉ</li>
+                                <li class="private-item">Đăng xuất</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-content">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-1">
+                            <img class="header-content-logo" src="./assets/img/shopee_logo.png" alt="shopee_logo">
+                        </div>
+                        <div class="col l-10">
+                            <div class="header-content-search-wrap">
+                                <input type="text" class="header-content-search-1" required placeholder="Nhập để tìm kiếm sản phẩm">
+                                <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+                                <div class="search-history">
+                                    <h3 class="search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul>
+                                        <li class="pointer">Áo khoát nam</li>
+                                        <li class="pointer">Giày nam</li>
+                                        <li class="pointer">Giày nữ</li>
+                                        <li class="pointer">Bàn phím máy tính</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-1">
+                            <div class="header-content-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="header-cart-notice">3</span>
+                                <div class="cart-product">
+                                    <h5>Sản phẩm đã thêm</h5>
+                                    <div class="cart-product-item">
+                                        <img src="./assets/img/giaynam.jpg" alt="giay nam">
+                                        <div class="item-info">Giày nam thời thượng</div>
+                                        <div class="item-price">2.000.000</div>
+                                        <div class="item-number">2</div>
+                                        <div class="item-type">Phân loại hàng: Bạc</div>
+                                        <button class="item-btn-del pointer">Xóa</button>
+                                    </div>
+                                    <div class="cart-product-item">
+                                        <img src="./assets/img/giaynam.jpg" alt="giay nam">
+                                        <div class="item-info">Giày nam thời thượng</div>
+                                        <div class="item-price">2.000.000</div>
+                                        <div class="item-number">2</div>
+                                        <div class="item-type">Phân loại hàng: Bạc</div>
+                                        <button class="item-btn-del pointer">Xóa</button>
+                                    </div>
+                                    <div class="cart-product-item">
+                                        <img src="./assets/img/giaynam.jpg" alt="giay nam">
+                                        <div class="item-info">Giày nam thời thượng</div>
+                                        <div class="item-price">2.000.000</div>
+                                        <div class="item-number">2</div>
+                                        <div class="item-type">Phân loại hàng: Bạc</div>
+                                        <button class="item-btn-del pointer">Xóa</button>
+                                    </div>
+                                    <button class="btn-see-cart">Xem giỏ hàng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <!-- Phần Category -->
+                    <div class="col l-3 m-0 c-0">
+                        <div class="category">
+                           <div class="category-title"><i class="fas fa-bars"></i> Danh Mục</div>
+                            <ul>
+                                <li class="category-item">Thời Trang Nam</li>
+                                <li class="category-item">Điện Thoại & Phụ Kiện</li>
+                                <li class="category-item">Thiết Bị Điện Tử</li>
+                                <li class="category-item">Máy Tính & Laptop</li>
+                                <li class="category-item">Máy Ảnh & Máy Quay Phim</li>
+                                <li class="category-item">Đồng Hồ</li>
+                                <li class="category-item">Giày Dép Nam</li>
+                                <li class="category-item">Thiết Bị Điện Gia Dụng</li>
+                                <li class="category-item">Thể Thao & Du Lịch</li>
+                                <li class="category-item">Thời Trang Nữ</li>
+                                <li class="category-item">Xem Thêm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Phần Content -->
+                    <div class="col l-9 m-12 c-12">
+                        <div class="content">
+                           <div class="row sm-gutter">
+                               <div class="col l-12 m-12 c-12">
+                                    <div class="content-nav-select">
+                                        <div class="content-nav-select-1">Sắp xếp theo</div>
+                                        <div class="content-nav-select-2">
+                                            <div class="content-nav-select-2-item">Phổ biến</div>
+                                            <div class="content-nav-select-2-item color-red">Mới nhất</div>
+                                            <div class="content-nav-select-2-item">Bán chạy</div>
+                                        </div>
+                                        <div class="content-nav-select-3">Giá <i class="fas fa-angle-down"></i>
+                                            <div class="content-nav-select-3-select">
+                                                <div class="content-nav-select-3-select-item">Giá: Cao đến Thấp</div>
+                                                <div class="content-nav-select-3-select-item">Giá: Thấp đến Cao</div>
+                                            </div>
+                                        </div>
+                                        <div class="content-nav-select-4">1</div>
+                                        <div class="content-nav-select-5"><i class="fas fa-angle-left"></i>
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                               </div>
+                           </div>
+
+                           <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <div class="content-product">
+                                        <img class="content-product-img" src="./assets/img/lamborghini.png" alt="Lamborghini">
+                                        <h4 class="content-product-name">Lamborghini mô hình đồ chơi sang trọng, thách thức mọi ánh nhìn</h4>
+                                        <div class="content-product-price">
+                                            <div class="content-produce-price-old">đ1.200.000</div>
+                                            <div class="content-produce-price-new">đ999.000</div>
+                                        </div>
+                                        <div class="content-product-action">
+                                            <span><i class="fas fa-heartbeat"></i></span>
+                                            <div>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star vote"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <span class="sold">125 đã bán</span>
+                                        </div>
+                                        <div class="content-product-local">Thành Phố HCM</div>
+                                        <div class="content-product-favorite">
+                                            <i class="fas fa-check"></i> Yêu thích
+                                        </div>
+                                        <div class="content-product-sale">
+                                            <span class="content-product-sale-percent">25%</span><br>
+                                            <span class="content-product-sale-label">GIẢM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+        <div class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-3 c-6">
+                        <h5 class="footer-title">Chăm sóc khách hàng</h5>
+                        <a href="#" class="footer-item">Trung tâm trợ giúp</a> <br>
+                        <a href="#" class="footer-item">Hướng dẫn mua hàng</a> <br>
+                        <a href="#" class="footer-item">Trả hàng & hoàn tiền</a> <br>
+                        <a href="#" class="footer-item">Chính sách bảo hành</a> <br>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <h5 class="footer-title">Giới thiệu</h5>
+                        <a href="#" class="footer-item">Tuyển dụng</a> <br>
+                        <a href="#" class="footer-item">Điều khoản Shoppe</a> <br>
+                        <a href="#" class="footer-item">Chính sách bảo mật</a> <br>
+                        <a href="#" class="footer-item">Kênh người bán</a> <br>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <h5 class="footer-title">Danh mục</h5>
+                        <a href="#" class="footer-item">Thời trang nam</a> <br>
+                        <a href="#" class="footer-item">Thời trang nữ</a> <br>
+                        <a href="#" class="footer-item">Điện thoại & Phụ kiện</a> <br>
+                        <a href="#" class="footer-item">Thiết bị điện tử</a> <br>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <h5 class="footer-title">Theo dõi</h5>
+                        <a href="#" class="footer-item"><i class="fab fa-facebook-f"></i> Facebook</a> <br>
+                        <a href="#" class="footer-item"><i class="fab fa-instagram"></i> Instagram</a> <br>
+                        <a href="#" class="footer-item"><i class="fab fa-linkedin-in"></i> Linkedin</a> <br>
+                    </div>
+                    <div class="col l-2-4 m-0 c-6">
+                        <h5 class="footer-title">Vào cửa hàng trên ứng dụng</h5>
+                        <img class="footer-logo" src="./assets/img/logoCHandApp.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
